@@ -12,3 +12,9 @@ docker network create --attachable giropopus
 docker run --env "REDIS_HOST=redis" --name giropops-senhas -p 5000:5000 --rm --network giropopus linuxtips-giropop
 docker run -d --network dbd69a54913b -p 6379:6379 --name redis redis
 ```
+
+
+Desafio 03:
+Executar a aplicação utilizando a imagem python:latest e não mais a de desenvolvimento.
+Para tal, foi utilizado o multistage. Foi adicionado um docker-compose ao repositório, para facilitar 
+o processo de execução da aplicação.
